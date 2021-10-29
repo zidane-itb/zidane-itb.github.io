@@ -3,10 +3,12 @@ let overlay = document.querySelectorAll('.overlay')
 let main_container = document.querySelector('#main')
 let info_btn = document.querySelector('#info-btn')
 let side = document.querySelector('#side')
+let video_player = document.querySelector('#video-frame')
 
 info_btn.addEventListener('click', () => {
     side.style.visibility = 'hidden'
     main_container.style.width = '100%'
+    video_player.src = video_player.src
 })
 
 let movie_trailer = {
