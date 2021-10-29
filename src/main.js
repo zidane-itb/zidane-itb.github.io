@@ -75,7 +75,7 @@ let create_poster = async (imdbId) => {
 }
 
 const fetchMovie = async (imdbId) => {
-    const res = await fetch(`http://www.omdbapi.com/?i=${imdbId}&apikey=c2116020`, {
+    const res = await fetch(`https://www.omdbapi.com/?i=${imdbId}&apikey=c2116020`, {
         method: 'GET'
     })
     return res.json()
